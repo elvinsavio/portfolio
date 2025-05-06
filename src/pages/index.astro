@@ -1,0 +1,159 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout pageTitle="Home">
+    <section
+        id="main"
+        class="h-screen relative overflow-hidden flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat shadow-[inset_0_0_50em_10em_var(--background)]"
+        style="background-image: url('/background.jpg');"
+    >
+        <h1 class="text-5xl font-bold fira-code z-10">
+            <span class="text-orange-500">Elvin</span>Savio
+        </h1>
+        <p class="text-lg z-10">Software engineer</p>
+    </section>
+
+    <section
+        class="flex flex-col lg:flex-row items-center justify-center px-2 md:px-10 gap-6 max-w-6xl mx-auto"
+    >
+        <div class="w-full h-full" id="about">
+            <p><span class="text-primary">Name</span>: Elvin Savio</p>
+            <p><span class="text-primary">Location</span>: Bengaluru, India</p>
+            <p>
+                <span class="text-primary">GitHub</span>:
+                <a href="github.com/elvinsavio">github.com/elvinsavio</a>
+            </p>
+            <p>
+                <span class="text-primary">Email</span>:
+                <a href="mailto:elvinsavio.lp@gmail.com">
+                    elvinsavio.lp@gmail.com</a
+                >
+            </p>
+            <p>
+                <span class="text-primary">Discord</span>: ShoeTooBig
+            </p>
+        </div>
+        <div class="flex flex-col gap-4">
+            <div>
+                <h2 class="text-3xl font-bold">About Me</h2>
+                <p class="text-lg">
+                    I am a software engineer with a passion for <span
+                        class="text-primary">building applications</span
+                    >. With a background in computer science and hands-on
+                    experience in full-stack web development, I thrive on
+                    turning ideas into reality through elegant code and
+                    innovative solutions.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-bold">Technical Expertise</h3>
+                <p class="text-lg">
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>
+                            <span class="text-primary">Python Development</span
+                            >: I am well-versed in Python, using it to develop
+                            backend logic and scripting tasks efficiently.
+                        </li>
+                        <li>
+                            <span class="text-primary"
+                                >Frontend Technologies</span
+                            >: I have a strong command of frontend technologies
+                            such as HTML, CSS, and JavaScript, enabling me to
+                            create seamless user experiences.
+                        </li>
+                        <li>
+                            <span class="text-primary">Database Management</span
+                            >: I am skilled in working with various databases,
+                            including PostgreSQL and MySQL, ensuring data
+                            integrity and efficient retrieval.
+                        </li>
+                        <li>
+                            <span class="text-primary">Automation</span>: I have
+                            experience in automating tasks and processes using
+                            Python and bash, streamlining workflows and
+                            improving efficiency. <a
+                                class="text-primary underline"
+                                href="dotfiles">dotfiles</a
+                            >
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="flex flex-col items-center justify-center px-10 gap-6 max-w-6xl mx-auto"
+    >
+        <h2 class="text-3xl font-bold">Projects</h2>
+        <div class="grid grid-cols-1 gap-6">
+            <div class="flex flex-col md:flex-row gap-6">
+                <div>
+                    <a
+                        class="underline text-primary cursor-pointer"
+                        href="https://classicfiber.info"
+                        ><h1 class="text-3xl font-bold">Classic Fiber</h1></a
+                    >
+                    <img
+                        alt="Classic Fiber"
+                        class="aspect-video h-[300px] rounded-lg mx-auto shadow-lg bg-amber-50"
+                    />
+                </div>
+
+                <div>
+                    <h1 class="text-3xl font-bold hidden sm:block">&nbsp;</h1>
+                    <p>
+                        Classic Fiber is a full-stack Django web application
+                        built for a car and bike parts business. It features a
+                        responsive public-facing product portal, a robust admin
+                        dashboard, full-text search, SEO optimization, and
+                        accessibility best practices. The app is containerized
+                        with Docker and deployed on AWS using PostgreSQL and
+                        Tailwind CSS.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row-reverse gap-6">
+                <div>
+                    <a
+                        class="underline text-primary cursor-pointer"
+                        href="https://github.com/elvinsavio/faht-stack"
+                        ><h1 class="text-3xl font-bold">
+                            Flask, HTMX, Tailwind, Alpinejs template
+                        </h1></a
+                    >
+                    <img
+                        alt="Classic Fiber"
+                        class="aspect-video h-[300px] rounded-lg mx-auto shadow-lg bg-amber-50"
+                    />
+                </div>
+
+                <div>
+                    <h1 class="text-3xl font-bold hidden sm:block">&nbsp;</h1>
+                    <h1 class="text-3xl font-bold hidden sm:block">&nbsp;</h1>
+                    <p>
+                        A responsive template built with Flask, HTMX, Tailwind
+                        CSS, and Alpine.js. It features a clean and modern
+                        design, making it suitable for various web applications.
+                        The template is designed to be easily customizable and
+                        includes components for navigation, forms, and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section
+    class="flex flex-col items-center justify-center px-10 gap-6 max-w-6xl mx-auto"
+>
+    <h2 class="text-3xl font-bold">Contact</h2>
+    <p class="text-lg">
+        If you would like to get in touch, feel free to reach out via email
+        or connect with me on GitHub or on dicsord.
+    </p>
+
+</section>
+</BaseLayout>
